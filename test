@@ -1,0 +1,24 @@
+package com.company;                                                               
+import java.util.Scanner;                                                          
+import java.util.Arrays;                                                           
+                                                                                   
+public class Main {                                                                
+                                                                                   
+    public static void main(String[] args) {                                       
+        // write your code here                                                    
+        System.out.println("Entrez un mot :");                                     
+        Scanner scan = new Scanner(System.in);                                     
+        String wordInput = scan.next();                                            
+                                                                                   
+        System.out.println(wordInput);                                             
+                                                                                   
+        char[] guessWord = new char[wordInput.length()];                           
+                                                                                   
+        for (int i = 0; i < wordInput.length(); i++) {                             
+            guessWord[i] = wordInput.charAt(i);                                    
+        }                                                                          
+                                                                                   
+        System.out.println(Arrays.toString(guessWord));                            
+                                                                                   
+    }                                                                              
+}                                                                                  
